@@ -1,0 +1,7 @@
+.contacto-datos { text-align: center; }
+.contact-info { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+.contact-item { display: grid; gap: 0.35rem; }
+.contact-label { display: block; font-size: 1rem; color: rgba(34,54,74,0.75); text-transform: uppercase; letter-spacing: 0.14em; }
+.contact-item strong { display: block; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--azul-oscuro); }
+.contact-name { margin-top: 3rem; font-size: clamp(1.3rem, 2vw, 2rem); font-weight: 700; color: var(--azul); }
+@media (max-width: 720px) { .contact-info { gap: 1rem; } }

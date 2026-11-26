@@ -1,0 +1,11 @@
+.product-list { display: grid; gap: 1rem; margin-top: 1rem; }
+.product-card { display: grid; grid-template-columns: 220px 1fr auto; gap: 1rem; align-items: flex-start; background: linear-gradient(145deg, var(--blanco), var(--gris)); border-radius: 20px; padding: 1rem; border: 1px solid rgba(15,76,129,0.08); }
+.product-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 16px; }
+.product-info { display: flex; flex-direction: column; gap: 0.7rem; }
+.product-price { margin-left: auto; text-align: right; font-size: clamp(1.4rem, 2vw, 2rem); font-weight: 800; color: var(--azul-oscuro); }
+.product-price small { display: block; font-size: 0.9rem; color: rgba(34,54,74,0.75); margin-top: 0.35rem; }
+.product-pagination { display: flex; align-items: center; justify-content: center; gap: 0.8rem; margin-top: 1rem; }
+.pagination-btn { border: 0; border-radius: 999px; padding: 0.5rem 0.9rem; background: var(--azul); color: var(--blanco); font-weight: 600; cursor: pointer; }
+.pagination-btn:disabled { cursor: not-allowed; opacity: 0.45; }
+.pagination-info { font-weight: 700; color: var(--azul-oscuro); }
+@media (max-width: 720px) { .product-card { grid-template-columns: 1fr; } .product-price { margin-left: 0; text-align: left; }}
